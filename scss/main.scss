@@ -1,13 +1,11 @@
+@use "variables" as v;
 @import url('reset');
-$color-red: rgb(255, 0, 212);
-$color-peach:rgba(255, 215, 185, 0.91) 23%;
-$color-violet:rgba(223, 159, 247, 0.8) 93%;
 
 body {
   font-family: "Teachers", sans-serif;
   background: linear-gradient(106.5deg,
-    $color-peach,
-    $color-violet);
+   v.$color-peach,
+   v.$color-violet);
 
   animation:{
       name: golgol;
@@ -17,7 +15,8 @@ body {
     }
   }
 ::selection {
-  background:$color-red;
+  background:
+  v.$color-red;
   color: white;
 }
 
@@ -25,29 +24,29 @@ body {
   0% {
     background: linear-gradient(
       20deg,
-     $color-peach,
-     $color-violet
+     v.$color-peach,
+     v.$color-violet
     );
   }
   25% {
     background: linear-gradient(
       80deg,
-     $color-peach,
-     $color-violet
+     v.$color-peach,
+     v.$color-violet
     );
   }
   50% {
     background: linear-gradient(
       120deg,
-     $color-peach,
-     $color-violet
+     v.$color-peach,
+     v.$color-violet
     );
   }
   100% {
     background: linear-gradient(
       160deg,
-     $color-peach,
-     $color-violet
+     v.$color-peach,
+     v.$color-violet
     );
   }
 }
@@ -67,7 +66,8 @@ aside {
   padding: 2vw;
 }
 
-/* MARK:Header */
+/* MARK:Header 
+*/
 header {
   display: flex;
   justify-content: space-between;
@@ -75,7 +75,7 @@ header {
   ul {
    list-style: none;
    text-align: right;
-   color:$color-red;
+   color:v.$color-red;
    cursor: pointer;
   
    li:first-child {
@@ -102,7 +102,8 @@ header {
 }
 
 
-/*MARK: Main */
+/*MARK: Main 
+*/
 main{
   h1 {
     font-size: 70px;
